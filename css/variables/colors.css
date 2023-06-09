@@ -1,0 +1,181 @@
+@import "open-props/colors";
+@import "open-props/colors-hsl";
+
+/* https://open-props.style#colors */
+
+/* --gray-{0-12}
+--stone-{0-12}
+--red-{0-12}
+--pink-{0-12}
+--purple-{0-12}
+--violet-{0-12}
+--indigo-{0-12}
+--blue-{0-12}
+--cyan-{0-12}
+--teal-{0-12}
+--green-{0-12}
+--lime-{0-12}
+--yellow-{0-12}
+--orange-{0-12}
+--choco-{0-12}
+--brown-{0-12}
+--sand-{0-12}
+--camo-{0-12}
+--jungle-{0-12}
+
+see more: https://yeun.github.io/open-color/ */
+
+/* (MAYBE) FUTURE ALTERNATIVE */
+
+/* --text-default
+--text-dimmer
+--text-dimmest */
+
+/* --surface-root
+--surface-default
+--surface-higher
+--surface-highest */
+
+/* --neutral-strongest
+--neutral-stronger
+--neutral-default
+--neutral-dimmer
+--neutral-dimmest */
+
+/* --text-on-primary-default
+--text-on-primary-dimmer
+--text-on-primary-dimmest */
+
+/* --primary-strongest
+--primary-stronger
+--primary-default
+--primary-dimmer
+--primary-dimmest */
+
+/* --text-on-secondary-default
+--text-on-secondary-dimmer
+--text-on-secondary-dimmest */
+
+/* --secondary-strongest
+--secondary-stronger
+--secondary-default
+--secondary-dimmer
+--secondary-dimmest */
+
+html {
+    --text-1-light: var(--gray-8);
+    --text-2-light: var(--gray-7);
+    --text-link-light: var(--indigo-8);
+
+    --primary-light: var(--gray-8);
+    --primary-light-hover: hsla(var(--gray-8-hsl) / 0.9);
+    --text-on-primary-light: white;
+
+    --secondary-light: var(--gray-3);
+    --secondary-light-hover: hsla(var(--gray-3-hsl) / 0.9);
+    --text-on-secondary-light: white;
+
+    --destructive-light: var(--red-6);
+    --destructive-light-hover: var(--red-7);
+    --text-on-destructive-light: white;
+
+    --surface-1-light: var(--gray-0);
+    --surface-2-light: var(--gray-1);
+    --surface-3-light: var(--gray-2);
+    --surface-4-light: var(--gray-3);
+
+    --border-1-light: var(--gray-3);
+    --border-2-light: var(--gray-4);
+    --border-3-light: var(--gray-5);
+
+    --ring-light: var(--gray-6);
+}
+
+html {
+    --text-1-dark: var(--gray-0);
+    --text-2-dark: var(--gray-5);
+    --text-link-dark: var(--indigo-5);
+
+    --primary-dark: var(--gray-0);
+    --primary-dark-hover: var(--gray-1);
+    --text-on-primary-dark: var(--gray-12);
+
+    --secondary-dark: var(--gray-3);
+    --secondary-dark-hover: var(--gray-2);
+    --text-on-secondary-dark: var(--gray-0);
+
+    --destructive-dark: var(--red-3);
+    --destructive-dark-hover: var(--red-4);
+    --text-on-destructive-dark: var(--gray-0);
+
+    --surface-1-dark: var(--gray-9);
+    --surface-2-dark: var(--gray-8);
+    --surface-3-dark: var(--gray-7);
+    --surface-4-dark: var(--gray-6);
+
+    --border-1-dark: var(--gray-5);
+    --border-2-dark: var(--gray-4);
+    --border-3-dark: var(--gray-3);
+
+    --ring-dark: var(--gray-4);
+}
+
+:root {
+    --color-text-1: var(--text-1-light);
+    --color-text-2: var(--text-2-light);
+    --color-text-link: var(--text-link-light);
+
+    --color-primary: var(--primary-light);
+    --color-primary-hover: var(--primary-light-hover);
+    --color-text-on-primary: var(--text-on-primary-light);
+
+    --color-secondary: var(--secondary-light);
+    --color-secondary-hover: var(--secondary-light-hover);
+    --color-text-on-secondary: var(--text-on-secondary-light);
+
+    --color-destructive: var(--destructive-light);
+    --color-destructive-hover: var(--destructive-light-hover);
+    --color-text-on-destructive: var(--text-on-destructive-light);
+
+    --color-surface-1: var(--surface-1-light);
+    --color-surface-2: var(--surface-2-light);
+    --color-surface-3: var(--surface-3-light);
+    --color-surface-4: var(--surface-4-light);
+
+    --color-border-1: var(--border-1-light);
+    --color-border-2: var(--border-2-light);
+    --color-border-3: var(--border-3-light);
+
+    --color-ring: var(--ring-light);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text-1: var(--text-1-dark);
+        --color-text-2: var(--text-2-dark);
+        --color-text-link: var(--text-link-dark);
+
+        --color-primary: var(--primary-dark);
+        --color-primary-hover: var(--primary-dark-hover);
+        --color-text-on-primary: var(--text-on-primary-dark);
+
+        --color-secondary: var(--secondary-dark);
+        --color-secondary-hover: var(--secondary-dark-hover);
+        --color-text-on-secondary: var(--text-on-secondary-dark);
+
+        --color-destructive: var(--destructive-dark);
+        --color-destructive-hover: var(--destructive-dark-hover);
+        --color-text-on-destructive: var(--text-on-destructive-dark);
+
+        --color-surface-1: var(--surface-1-dark);
+        --color-surface-2: var(--surface-2-dark);
+        --color-surface-3: var(--surface-3-dark);
+        --color-surface-4: var(--surface-4-dark);
+
+        --color-border-1: var(--border-2-dark);
+        --color-border-2: var(--border-2-dark);
+        --color-border-3: var(--border-3-dark);
+
+        --color-ring: var(--ring-dark);
+    }
+}

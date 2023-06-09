@@ -1,0 +1,8 @@
+@import "open-props/zindex";
+
+/* https://open-props.style/#z-index */
+
+/* 
+--layer-{1-5}
+--layer-important: 2147483647; 
+*/
